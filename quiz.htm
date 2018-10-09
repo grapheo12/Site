@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Quiz</title>
+</head>
+<body>
+    <div id="q">
+        <p>Q.<span id="n"></span></p>
+        <p id="qtext"></p>
+    </div>
+    <div id="a">
+            <input type="radio" name="ans" id="r1"><span id="1"></span><br>
+            <input type="radio" name="ans" id="r2"><span id="2"></span><br>
+            <input type="radio" name="ans" id="r3"><span id="3"></span><br>
+            <input type="radio" name="ans" id="r4"><span id="4"></span><br>
+        <button onclick="next();">Next</button>
+    </div>
+    
+    <script>
+        var qtexts = Array();
+        qtexts[0] = "";
+        qtexts[1] = "When did India achieve independence?";
+        qtexts[2] = "When was IIT KGP established?";
+        qtexts[3] = "What is 1+1?";
+        qtexts[4] = "What is 1*2?";
+        
+        var answers = Array();
+        answers[0] = [0, 0, 0, 0];
+        answers[1] = [1946, 1947, 1948, 1951];
+        answers[2] = [1946, 1947, 1948, 1951];
+        answers[3] = [2, 7, 8, 1];
+        answers[4] = [2, 7, 8, 1];
+        
+        var user = Array();
+        user[0] = null;
+
+        var i = 1;
+        function next(){
+            if (i <= 4){
+                document.getElementById("n").innerHTML = i;
+                document.getElementById("qtext").innerHTML = qtexts[i];
+                document.getElementById("1").innerHTML = answers[i][0];
+                document.getElementById("2").innerHTML = answers[i][1];
+                document.getElementById("3").innerHTML = answers[i][2];
+                document.getElementById("4").innerHTML = answers[i][3];
+                
+                var j = 1;
+                for (j = 1; j <= 4; j++){
+                    if (document.getElementById(("r" + j)).checked == true){
+                        user[i] = j;
+                        document.getElementById(("r" + j)).checked = false;
+                        break;
+                    }
+                }
+                i += 1;
+            }
+            else{
+                document.body.innerHTML = "";
+                document.body.innerHTML += "q1 " + user[1] + ((user[1] == 1)? ("Correct<br>") :( "Wrong<br>"));
+                document.body.innerHTML += "q2 " + user[2] +((user[2] == 3)? ("Correct<br>") : ("Wrong<br>"));
+                document.body.innerHTML += "q3 " + user[3] +((user[3] == 0)? ("Correct<br>") : ("Wrong<br>"));
+                document.body.innerHTML += "q4 " + user[4] +((user[4] == 0)? ("Correct<br>") : ("Wrong<br>"));
+            }
+        }
+    </script>
+</body>
+</html>

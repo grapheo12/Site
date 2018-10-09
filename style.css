@@ -1,0 +1,246 @@
+body{
+    background-color: black;
+    font-family: Helvetica;    
+}
+
+#header{
+    background-color: white;
+    width: 100vw;
+    height: 5vw;
+    margin-top: 0vw;
+    z-index: 9;
+    position: fixed;
+    top: 0vw;
+    left: 0vw;
+    padding-top: auto;
+}
+
+#header_logo{
+    margin-left: 5vw;
+    margin-right: 55vw;
+    position: relative;
+    top: 1.2vw;
+}
+
+#h{
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+}
+
+.header_box{
+    color: grey;
+    font-style: bold;
+    text-decoration-line: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: relative;
+    top: 0.5vw;
+    transition: color 300ms ease;
+    transition: border 500ms ease;
+}
+.header_box:hover{
+    color: black;
+}
+
+#header_trial{
+    color: rgb(52, 173, 88);
+    transition: color 500ms ease;
+}
+#header_trial:hover{
+    color: #0b6b27;
+}
+
+.header_box1{
+    border-width: 1px;
+    border-color: rgb(52, 173, 88);
+    border-style: solid;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    font-style: bold;
+    text-decoration-line: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: relative;
+    top: 0.5vw;
+    transition: color 300ms ease;
+    transition: background-color 300ms ease. border 300ms ease;
+}
+.header_box1:hover{
+    color: white !important;
+    background-color: rgb(52, 173, 88);
+}
+
+#bkgnd{
+    z-index: -20;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 5vw;
+    left: 0vw;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#reg{
+    position: absolute;
+    top: 20vh;
+    left: 60vw;
+    height: 370px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    border-collapse: separate;
+    perspective: 1px;
+}
+#f{
+    background-color: white;
+    height: 80%;
+    width: 100%;
+    position: auto;
+    border-radius: 20px;
+}
+
+fieldset{
+    border: none;
+    float: left;
+}
+
+#f0{
+    background-color:rgb(192,192,192);
+    height: 7%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#f>hr{
+    color: #eae3e3;
+    float: left;
+    clear: both;
+}
+#f5{
+    float: left;
+    clear: none;
+}
+
+#seconddata{
+    background-color: white;
+    background-image: url("back2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    height: 105vh;
+}
+
+#f6{
+    display: block;
+    cursor: pointer;
+    width: 90%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #387bab;
+    color: white;
+    text-decoration: bold;
+    font-size: 14pt;
+    transition: background-color 300ms ease;
+    position: relative;
+    bottom: -20px;
+    border: none;
+    padding: none;
+}
+#f6>img{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+#f6:hover{
+    background-color: #063f68;
+}
+
+#taglines{
+    color: white;
+    position: absolute;
+    top: 42vh;
+    left: 15vw;
+}
+#taglines>h2{
+    font-size: 32pt;
+    font-weight: 1000;
+}
+#taglines>h3{
+    font-size: 20pt;
+}
+#taglines table{
+    float: left;
+    clear: none;
+    width: 60vw;
+    position: absolute;
+    top: 280px;
+    left: inherit;
+}
+table h3{
+    float: left;
+    clear: both;
+    font-size: 30pt;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+#firstdata{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    height: 610px;
+    width: 100vw;    
+}
+
+td>span{
+    position: relative;
+    bottom: 0%;
+    display: block;
+    font-size: 12pt;
+}
+
+#video{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#coder_img{
+    position: relative;
+    top: -112px;
+    left: 591px;
+    z-index: 999;
+}
+
+#flexible{
+    position: relative;
+    top: -521px;
+    left: 639px;
+}
+
+#flexible > h3{
+    font-size: 32pt;
+    margin: 0pt;
+}
+
+#flexible > p{
+    color: grey;
+    font-size: 18pt;
+}
+
+
+
+
